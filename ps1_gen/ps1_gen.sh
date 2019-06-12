@@ -8,7 +8,7 @@ function genps1() {
  fi 
  name=$1
  echo generating $1
- echo PowerShell -NoProfile -ExecutionPolicy Bypass -file \"$name\" >> $name.bat
+ echo PowerShell -NoProfile -ExecutionPolicy Bypass -file \"$name.ps1\" >> $name.bat
  echo \#require admin >> $name.ps1
 }
 
