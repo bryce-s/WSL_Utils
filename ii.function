@@ -1,6 +1,7 @@
 # alias ii='explorer.exe'
 
 function ii() {
+ # "$@" will expand all args to seperate strings when doublequotes
  for pathName in "$@"
  do
    explorer.exe $(wslpath -w $pathName)
