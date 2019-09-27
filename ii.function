@@ -1,0 +1,8 @@
+# alias ii='explorer.exe'
+
+function ii() {
+ for path in "$@"
+ do
+   explorer.exe $(wslpath -w $path)
+ done
+}
