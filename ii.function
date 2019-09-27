@@ -1,5 +1,6 @@
 # alias ii='explorer.exe'
 
+cat << EOF >> ~/.zshrc
 function ii() {
  # "$@" will expand all args to seperate strings when doublequotes
  for pathName in "$@"
@@ -7,3 +8,4 @@ function ii() {
    explorer.exe $(wslpath -w $pathName)
  done
 }
+EOF
