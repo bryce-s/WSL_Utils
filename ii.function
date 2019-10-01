@@ -1,5 +1,10 @@
 # alias ii='explorer.exe'
 
+# todo: if passing a literal file instead of a dir
+#       we can just execute the file like
+#       $(find $dir -type f | head -1)
+#       weird, but zsh syntax highlighting thinks this is invalid.
+
 cat << EOF >> ~/.zshrc
 function ii() {
  # "$@" will expand all args to seperate strings when doublequotes
