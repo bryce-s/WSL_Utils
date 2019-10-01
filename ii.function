@@ -4,6 +4,8 @@
 #       we can just execute the file like
 #       $(find $dir -type f | head -1)
 #       weird, but zsh syntax highlighting thinks this is invalid.
+#       --actually explorer.exe behaves like open, here. Although
+#         this is still interesting.
 
 cat << EOF >> ~/.zshrc
 function ii() {
